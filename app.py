@@ -24,7 +24,7 @@ def spam_or_ham(message):
     X = cv.transform([message]).toarray()
     prediction = model.predict(X)
     if prediction:
-        return 'Ham'
+        return 'Not Spam'
     else:
         return 'Spam'
 
